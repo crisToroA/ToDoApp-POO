@@ -7,7 +7,16 @@ class Todo():
         self.completed: bool = False
         self.tags: (list[str]) = []
 
+    def mark_completed(self):
+        self.completed = True
+
+    def add_tag(self, tag: str):
+        if tag in self.tags:
+            return self.tags
+        else:
+            self.tags.append(tag)
+        return tag
 
 
-
-
+def __str__(self) -> str:
+    return self.code_id and self.title
